@@ -12,7 +12,7 @@ app.use("/api/tareas", require("./routes/tarea"));
 
 const port = process.env.PORT || 4000;
 
-app.get("/", req, (res) => res.send("Hola desde la api"));
+app.get("/", (req,res) => res.send("Hola desde la api"));
 
 app.listen(port, () => {
   console.log(`Servidor funcionando en el puerto ${port}`);
